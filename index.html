@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Email Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+	/* #region -=FONTS=- */
+	@font-face {
+		font-family: "Gilroy";
+		src: local("Gilroy Bold"), local("Gilroy-Bold"),
+			url("fonts/Gilroy-Bold.woff2") format("woff2"),
+			url("fonts/Gilroy-Bold.woff") format("woff");
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Gilroy";
+		src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+			url("fonts/Gilroy-Semibold.woff2") format("woff2"),
+			url("fonts/Gilroy-Semibold.woff") format("woff");
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Sailec";
+		src: local("Sailec Regular"), local("Sailec-Regular"),
+			url("fonts/Sailec-Regular.woff2") format("woff2"),
+			url("fonts/Sailec-Regular.woff") format("woff");
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	[style*="Gilroy"] {
+		font-family: "Gilroy", Arial, sans-serif !important;
+	}
+
+	[style*="Sailec"] {
+		font-family: "Sailec", Arial, sans-serif !important;
+	}
+	/* #endregion */
+
+	/* #region -=COMMON=- */
+	body {
+		width: 100% !important;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		margin: 0;
+		padding: 0;
+		line-height: 100%;
+	}
+
+	table {
+		border-collapse: collapse;
+		mso-table-lspace: 0pt;
+		mso-table-rspace: 0pt;
+	}
+
+	table td {
+		border-collapse: collapse;
+	}
+
+	img {
+		outline: none;
+		text-decoration: none;
+		border: none;
+		-ms-interpolation-mode: bicubic;
+		max-width: 100% !important;
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+
+	h1,
+	h2,
+	h3,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	/**
+		* @tab Page
+		* @section heading 1
+		* @style heading 1
+	*/
+	h1 {
+		/*@editable*/
+		font-size: 42px;
+		/*@editable*/
+		font-weight: 700;
+		/*@editable*/
+		line-height: 50px;
+		/*@editable*/
+		color: #203342;
+	}
+
+	/**
+		* @tab Page
+		* @section heading 2
+		* @style heading 2
+	*/
+	h2 {
+		/*@editable*/
+		font-size: 37px;
+		/*@editable*/
+		font-weight: 700;
+		/*@editable*/
+		line-height: 50px;
+		/*@editable*/
+		color: #203342;
+	}
+
+	/**
+		* @tab Page
+		* @section heading 3
+		* @style heading 3
+	*/
+	h3 {
+		/*@editable*/
+		font-size: 35px;
+		/*@editable*/
+		font-weight: 700;
+		/*@editable*/
+		line-height: 50px;
+		/*@editable*/
+		color: #203342;
+	}
+
+	/**
+		* @tab Page
+		* @section paragraph
+		* @style paragraph
+	*/
+	p {
+		/*@editable*/
+		font-size: 20px;
+		/*@editable*/
+		font-weight: 400;
+		/*@editable*/
+		line-height: 35px;
+		/*@editable*/
+		color: #203342;
+	}
+
+	a {
+		display: inline-block;
+	}
+	/* #endregion */
+
+	/* #region -=HEADER=- */
+	.header-td {
+		padding-top: 33px;
+		padding-bottom: 31px;
+		border-bottom: 2px solid #ffffff;
+	}
+
+	.header-table span a {
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 43px;
+		letter-spacing: 1.5px;
+		text-decoration: none;
+		color: #203342;
+	}
+	/* #endregion */
+
+	/* #region -=SECTION 1=- */
+	.section-td._section1 {
+		padding-top: 38px;
+		padding-bottom: 79px;
+	}
+
+	.section-td._section1 p {
+		font-size: 22px;
+	}
+
+	.section-td._section1 a {
+		display: block;
+	}
+	/* #endregion */
+
+	/* #region -=SECTION 2=- */
+
+	/* #endregion */
+
+	/* #region -=SECTION 3=- */
+	.section-td._section3 {
+		padding-top: 71px;
+		padding-bottom: 78px;
+	}
+	/* #endregion */
+
+	/* #region -=SECTION 4=- **/
+	._section4 .section-inner-td {
+		padding-top: 53px;
+		padding-bottom: 52px;
+		padding-left: 48px;
+	}
+
+	._section4 .section-inner-table h3,
+	._section4 .section-inner-table p,
+	._section4 .section-inner-table p a {
+		color: #ffffff;
+	}
+
+	._section4 .section-inner-table p {
+		line-height: 30px;
+		letter-spacing: 0.2px;
+	}
+
+	._section4 .section-inner-table p a {
+		display: inline-block;
+		font-weight: 700;
+	}
+	/* #endregion */
+
+	/* #region -=SECTION 5=- **/
+	._section5 .section-inner-td {
+		padding-top: 61px;
+		padding-bottom: 52px;
+		padding-right: 48px;
+	}
+
+	._section5 .section-inner-table h3 {
+		line-height: 43px;
+	}
+
+	._section5 .section-inner-table p {
+		line-height: 30px;
+		letter-spacing: 0.2px;
+	}
+	/* #endregion */
+
+	/* #region -=SECTION 6=- **/
+	.section-td._section6 {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+
+	._section6 .section-table p {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
+		letter-spacing: 0.2px;
+	}
+
+	._section6 .section-table p a {
+		font-weight: 700;
+		color: #2b99f0;
+	}
+	/* #endregion */
+
+	/* #region -=FOOTER=- */
+	.footer-td {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		border-top-width: 1px;
+		border-top-color: #e8e8e8;
+		border-top-style: solid;
+	}
+
+	.footer-info-td {
+		padding-bottom: 40px;
+	}
+
+	.footer-info-td td {
+		font-size: 14px;
+		letter-spacing: 0.14px;
+		line-height: 30px;
+	}
+
+	.footer-info-td a {
+		margin: 0;
+		font-size: 14px;
+		font-weight: 600;
+		text-decoration: none;
+		color: #2b99f0;
+	}
+
+	.footer-menu-td a {
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0.1px;
+		text-decoration: none;
+		color: #203342;
+	}
+	/* #endregion */
+
+	/* #region -=MEDIA=- */
+	@media (max-width: 600px) {
+		h1 {
+			font-size: 37px;
+			line-height: 40px;
+		}
+
+		h2 {
+			font-size: 33px;
+		}
+
+		h3 {
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 18px !important;
+		}
+
+		.w600 {
+			width: 480px !important;
+		}
+
+		.w504 {
+			width: 430px !important;
+		}
+
+		._section2 img {
+			width: 480px !important;
+		}
+
+		.img-td {
+			display: none;
+		}
+
+		.section-td,
+		.footer-td {
+			padding-top: 30px !important;
+			padding-bottom: 30px !important;
+		}
+
+		.section-inner-td {
+			padding-top: 30px !important;
+			padding-bottom: 30px !important;
+			padding-left: 25px !important;
+			padding-right: 25px !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		h2 {
+			font-size: 28px;
+		}
+
+		h3 {
+			font-size: 26px;
+		}
+
+		p {
+			font-size: 17px !important;
+		}
+
+		.w600 {
+			width: 375px !important;
+		}
+
+		.w504 {
+			width: 325px !important;
+		}
+
+		._section2 img {
+			width: 375px !important;
+		}
+	}
+	/* #endregion */
+</style>
+</head>
+
+<body style="margin: 0; padding: 0">
+<div style="font-size: 0px; font-color: #ffffff; opacity: 0; visibility: hidden; width: 0; height: 0; display: none;">
+	Email subject
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin: 0; padding: 0; min-width: 320px">
+	<tr>
+		<td align="center">
+			<table class="main-table w600" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="margin: 0; padding: 0; background-image: url(img/background.png); background-repeat: no-repeat;">
+				<!--**** SECTIONS ****-->
+				<!--+++ HEADER +++-->
+				<tr>
+					<td class="header-td" align="center">
+						<!-- HEADER table -->
+						<table class="header-table w504" border="0" cellpadding="0" cellspacing="0" width="504" style="margin: 0; padding: 0;">
+							<tr>
+								<!-- LOGO td -->
+								<td align="left">
+									<a mc:edit="logo-img" target="_blank" href="#!">
+										<img src="img/logo.png" title="logo" alt="logo" width="213" height="37"/>
+									</a>
+								</td>
+								<!-- CONTACT_US td -->
+								<td align="right">
+									<span mc:edit="header-link" style="font-family: Arial, Helvetica, sans-serif,'Gilroy';">
+										<a href="#!" target="_blank">
+											CONTACT US
+										</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ SECTION 1 | Get started... +++-->
+				<tr mc:repeatable>
+					<td class="section-td _section1" align="center">
+						<table class="section-table w504" border="0" cellpadding="0" cellspacing="0" width="504" style="margin: 0; padding: 0;">
+							<tr>
+								<td mc:edit="section1-title">
+									<h1 style="font-family: Arial, Helvetica, sans-serif, Gilroy">
+										Get started on<br />
+										going paperless.
+									</h1>
+								</td>
+							</tr>
+							<tr>
+								<td mc:edit="section1-text" style="padding-top: 28px; padding-bottom: 42px;">
+									<p style="font-family: Arial, Helvetica, sans-serif, Sailec">
+										Our easy to use tools make it easy to design beautiful online forms, convert existing PDFs into online services, and set up simple work flow and collaboration.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a mc:edit="section1-link" href="#!" target="_blank">
+										<img
+											src="img/get-started.png" title="get started" alt="get started" width="252" height="67"/>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ SECTON 2 | screenshot +++-->
+				<tr mc:repeatable>
+					<td class="_section2">
+						<img mc:edit="section2-img" src="img/screnshots.jpg" title="screenshot" alt="screenshots" width="600"/>
+					</td>
+				</tr>
+				<!--+++ SECTON 3 | We know... +++-->
+				<tr mc:repeatable>
+					<td class="section-td _section3" align="center">
+						<table class="section-table w504" border="0" cellpadding="0" cellspacing="0" width="504" style="margin: 0; padding: 0;">
+							<tr>
+								<td mc:edit="section3-title" style="padding-bottom: 24px;">
+									<h2 style="font-family: Arial, Helvetica, sans-serif, Gilroy">
+										We know government.
+									</h2>
+								</td>
+							</tr>
+							<tr>
+								<td mc:edit="section3-text">
+									<p style="font-family: Arial, Helvetica, sans-serif, Sailec">
+										Our team specialize exclusively with Government to make sure
+										you we can best accommodate and understand your needs. We work
+										with hundreds of governments in almost every state and manage
+										tens of thousands of various form use cases.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ SECTON 4 | Seamless University... +++-->
+				<tr mc:repeatable>
+					<td class="_section4" align="center">
+						<!-- SECTON 4 table -->
+						<table class="section-table w600" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#2b99f0" style="margin: 0; padding: 0; background-image: url(img/bg-crosses.png); background-repeat: no-repeat;">
+							<!-- PEAK tr -->
+							<tr>
+								<td align="center">
+									<img src="img/peak.png" alt="peak" width="33"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="section-inner-td">
+									<!-- UNIVERSITY-INNER table -->
+									<table class="section-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0">
+										<tr>
+											<td>
+												<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0">
+													<tr>
+														<td mc:edit="section4-title" style="padding-bottom: 20px;">
+															<h3 style="font-family: Arial, Helvetica, sans-serif, Gilroy;">
+																Seamless University
+															</h3>
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="section4-text" style="padding-right: 50px; padding-bottom: 32px;">
+															<p style="font-family: Arial, Helvetica, sans-serif, Sailec;">
+																Get oriented and learn, or explore our comprehensive <a href="#!" target="_blank" style="font-family: Arial, Helvetica, sans-serif, Gilroy;">Knowledge Base</a> for step-by-step walkthroughs and tutorials.
+															</p>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<a mc:edit="section4-link" href="#!" target="_blank">
+																<img src="img/learn-more-white.png" title="learn more" alt="learn more" width="135" height="37"/>
+															</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td class="img-td" align="right" width="191">
+												<img mc:edit="section4-img" src="img/hat.png" title="hat" alt="hat" width="191" style="display: block"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ SECTON 5 | SeamlessDocs 101... +++-->
+				<tr mc:repeatable>
+					<td class="_section5" align="center">
+						<!-- SECTON 5 table -->
+						<table class="section-table w600" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffe8c5" style="margin: 0; padding: 0; background-image: url(img/bg-lines.png); background-repeat: no-repeat;">
+							<tr>
+								<td class="img-td" align="left" width="257" style="padding-right: 50px">
+									<img mc:edit="section5-img" src="img/tasseract.png" title="tasseract" alt="tasseract" width="257" height="309.5"/>
+								</td>
+								<td class="section-inner-td">
+									<!-- DOCS-INNER table -->
+									<table class="section-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0">
+										<tr>
+											<td mc:edit="section5-title" style="padding-bottom: 26px;">
+												<h3 style="font-family: Arial, Helvetica, ans-serif,Gilroy;">
+													SeamlessDocs 101
+												</h3>
+											</td>
+										</tr>
+										<tr>
+											<td mc:edit="section5-text" style="padding-bottom: 35px;">
+												<p style="font-family: Arial, Helvetica, sans-serif, Sailec;">
+													We also offer weekly SeamlessDocs 101 Webinars to go through general training.
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a mc:edit="section5-link" href="#!" target="_blank">
+													<img src="img/learn-more-black.png" alt="learn more" width="135" height="37"/>
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ SECTON 6 | Also, check... +++-->
+				<tr mc:repeatable>
+					<td class="section-td _section6" align="center">
+						<table class="section-table w504" border="0" cellpadding="0" cellspacing="0" width="504" style="margin: 0; padding: 0;">
+							<tr>
+								<td mc:edit="section6-text1" style="padding-bottom: 32px;">
+									<p style="font-family: Arial, Helvetica, sans-serif, Sailec">
+										Also, check out <a href="#!" style="font-family: Arial, Helvetica, sans-serif, Gilroy; display: inline-block;">Top Forms</a> for inspiration on how other are using SeamlessDocs.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td mc:edit="section6-text2" style="padding-bottom: 52px;">
+									<p style="font-family: Arial, Helvetica, sans-serif, Sailec">
+										And your dedicated account management team is always there for you should you need chat, phone or email support.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a mc:edit="section6-link" target="_blank" href="#!">
+										<img src="img/get-started.png" title="get started" alt="get started" width="252" height="67"/>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--+++ FOOTER +++-->
+				<tr>
+					<td class="footer-td" align="center">
+						<!-- FOOTER table -->
+						<table class="footer-table w504" border="0" cellpadding="0" cellspacing="0" width="504" style="margin: 0; padding: 0;">
+							<tr>
+								<td>
+									<table class="footer inner-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0">
+										<tr>
+											<td class="footer-info-td">
+												<table>
+													<tr>
+														<td mc:edit="footer-text1" style="font-family: Arial, Helvetica, sans-serif, Sailec;">
+																&copy; 2018 SeamlessDocs. All Rights Reserved.
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="footer-text2" style="font-family: Arial, Helvetica, sans-serif, Sailec;">
+																30 Vandam St, New York, NY 10013
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span mc:edit="footer-link" style="font-family: Arial, Helvetica, sans-serif, 'Gilroy'; display: inline-block;">
+																<a target="_blank" href="#!">
+																	seamlessgov.com
+																</a>
+															</span>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width="21" valign="top" style="padding-top: 7px; padding-right: 13px">
+												<a mc:edit="footer-social-link1" target="_blank" href="#!">
+													<img src="img/twitter.png" title="twitter" alt="twitter" width="21"/>
+												</a>
+											</td>
+											<td width="21" valign="top" style="padding-top: 7px">
+												<a mc:edit="footer-social-link2" target="_blank" href="#!">
+													<img src="img/fb.png" title="facebook" alt="facebook" width="21"/>
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="footer-menu-td">
+									<span mc:edit="footer-menu-link-1" class="menu-link" style="font-family: Arial, Helvetica, sans-serif, 'Gilroy';">
+										<a href="#" target="_blank" style="display: inline-block">Contact Us</a>
+									</span>
+									&bull;
+									<span mc:edit="footer-menu-link-2" class="menu-link" style="font-family: Arial, Helvetica, sans-serif, 'Gilroy';">
+										<a href="#" target="_blank">Terms of Use</a>
+									</span>
+									&bull;
+									<span mc:edit="footer-menu-link-3" class="menu-link" style="font-family: Arial, Helvetica, sans-serif, 'Gilroy';">
+										<a href="#" target="_blank">Privacy Policy</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
